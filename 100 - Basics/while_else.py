@@ -1,4 +1,4 @@
-"""while else blocks are counter intuitive, please do not use them
+"""while else blocks are counterintuitive, please do not use them
 """
 
 

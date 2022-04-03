@@ -7,7 +7,6 @@ our_set = {string, integer}
 our_frozenset = frozenset({integer, string})
 
 
-
 if __name__ == '__main__':
     print(f'{hash(integer) = }')
     print(f'{hash(string) = }')

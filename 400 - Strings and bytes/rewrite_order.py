@@ -7,7 +7,7 @@ def reverse_lines_y(filename):
     """Reads data from `<filename>` and writes reversed lines to file `<filename>_reversed_y'
     e.g.
     a b  >  b a
-    c d  >  d c
+    c d     d c
     """
 
 
@@ -15,7 +15,7 @@ def reverse_lines_x(filename):
     """Reads data from `<filename>` and writes reversed lines to file `<filename>_reversed_x'
     e.g.
     a b  >  c d
-    c d  >  a b
+    c d     a b
     """
 
 
@@ -23,7 +23,7 @@ def reverse_lines(filename):
     """Reads data from `<filename>` and writes reversed lines to file `<filename>_reversed'
     e.g.
     a b  >  d c
-    c d  >  b a
+    c d     b a
     """
 
 

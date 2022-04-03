@@ -1,4 +1,4 @@
-"""for else blocks are counter intuitive, please do not use them
+"""for else blocks are counterintuitive, please do not use them
 """
 
 

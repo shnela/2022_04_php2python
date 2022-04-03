@@ -71,6 +71,7 @@ with open('output2.txt', 'w') as f:
 
 ### Exercises
 * [count_words.py](count_words.py)
+* [rewrite_order.py](rewrite_order.py)
 
 
 <!--- Links -->
