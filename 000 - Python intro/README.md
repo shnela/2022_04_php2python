@@ -18,6 +18,13 @@ python3 -V
         <th>Release schedule</th>
     </tr>
     <tr>
+        <td>3.10</td>
+        <td>bugfix</td>
+        <td>2020-10-05</td>
+        <td>2025-10</td>
+        <td><a href="https://www.python.org/dev/peps/pep-0619">PEP 619</a></td>
+    </tr>
+    <tr>
         <td>3.9</td>
         <td>bugfix</td>
         <td>2020-10-05</td>
@@ -26,7 +33,7 @@ python3 -V
     </tr>
     <tr>
         <td>3.8</td>
-        <td>bugfix</td>
+        <td>security</td>
         <td>2019-10-14</td>
         <td>2024-10</td>
         <td><a href="https://www.python.org/dev/peps/pep-0569">PEP 569</a></td>
@@ -39,13 +46,6 @@ python3 -V
         <td><a href="https://www.python.org/dev/peps/pep-0537">PEP 537</a></td>
     </tr>
     <tr>
-        <td>3.6</td>
-        <td>security</td>
-        <td>2016-12-23</td>
-        <td>2021-12-23</td>
-        <td><a href="https://www.python.org/dev/peps/pep-0494">PEP 494</a></td>
-    </tr>
-    <tr>
         <td>2.7</td>
         <td>end-of-life</td>
         <td>2010-07-03</td>
@@ -54,17 +54,17 @@ python3 -V
     </tr>
 </table>
 
-## Python vs Ruby
-[Ruby vs Python][]
+## Python vs php
+[php vs Python][]
 
 Let's look at the code.
 ```shell
-ls -1 ./python_vs_ruby
-> base.py
-> base.rb
-ruby ./python_vs_ruby/base.rb
+ls -1 ./python_vs_php
+> example.php
+> example.py
+php ./python_vs_php/example.php
 > ...
-python3 ./python_vs_ruby/base.py
+python3 ./python_vs_php/example.py
 > ...
 ```
 
@@ -88,6 +88,7 @@ python3 ./base.py
 Now run files: [`import_datetime.py`](import_datetime.py) and [`import_faker.py`](import_faker.py).
 
 ### External dependencies
+Let's use 3rd party [Faker][].
 ```shell
 # Create new python environment in '~/.envs/test'
 python3 -m venv ~/.envs/training_env
@@ -107,7 +108,7 @@ python ./import_faker.py
 But, what's [PIP][]?
 > The Python Package Index (PyPI) is a repository of software for the Python programming language.
 
-Kind of like [RubyGems][]
+Kind of like [composer][]?
 
 More info about [Virtual Environments and Packages][]
 
@@ -118,13 +119,14 @@ More info about [Virtual Environments and Packages][]
 
 To set custom environment used by pyCharm go to:
 ```
-File | Settings | Project: ruby2python | Python Interpreter
+File | Settings | Project: php2python | Python Interpreter
 ```
 `Right Click on gear` &rarr; `Add...` &rarr; `Existing environment` &rarr; `Path to python executable`
 
 <!--- Links -->
-[Ruby vs Python]: https://www.upguard.com/blog/python-vs-ruby
+[php vs Python]: https://kinsta.com/blog/php-vs-python/
+[Faker]: https://github.com/joke2k/faker
 [PIP]: https://pypi.org/
-[RubyGems]: https://rubygems.org/
+[composer]: https://getcomposer.org/
 [Virtual Environments and Packages]: https://docs.python.org/3/tutorial/venv.html
 [Create and edit run/debug configurations]: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html
