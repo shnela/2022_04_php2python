@@ -79,4 +79,7 @@ def factorial(n):
 
 print(factorial(1))
 print(factorial(100))
+# https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion
+# https://stackoverflow.com/questions/310974/what-is-tail-call-optimization
+# TODO: use some tail recursion optimized algo
 # print(factorial(10000))
