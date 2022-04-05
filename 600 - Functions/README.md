@@ -11,6 +11,7 @@
 [function_args.py](function_args.py)
 
 ## Python decorators
+TODO: add better decorator explanation
 ```python
 def deco(f):
     print('Decorator starts')

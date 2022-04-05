@@ -11,11 +11,13 @@ class AbstractClass(abc.ABC):
 
 
 class DefinedClass(AbstractClass):
-    pass
+    def abstract_method1(self):
+        return 42
 
 
 if __name__ == '__main__':
     # a = AbstractClass()
     b = DefinedClass()
+    print(b.abstract_method1())
 
     assert isinstance(b, AbstractClass)

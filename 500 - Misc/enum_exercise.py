@@ -48,13 +48,16 @@ if __name__ == '__main__':
 
     # Exercise1: generate 100 random apples
     apples = list()
+    assert apples
 
     # Exercise2: group apples by color
     apples_by_color = group_apples_by_color(apples)
+    assert apples_by_color[Color.red]
     assert all(a.color == Color.red for a in apples_by_color[Color.red])
 
     # Exercise3: group apples by color, then by WeightCategory
     apples_by_color_and_weight = group_apples_by_color_then_weight(apples)
+    assert apples_by_color_and_weight[Color.red][WeightCategory.light]
     assert all(
             a.color == Color.red and a.weight < 100
             for a in apples_by_color_and_weight[Color.red][WeightCategory.light]

@@ -1,5 +1,4 @@
 """
-https://book.pythontips.com/en/latest/__slots__magic.html
 Result (macOS, python3.9):
     Class dict used 268.587008 MB.
     Class EventSlots used 107.298816 MB.
@@ -32,6 +31,7 @@ class EventDataclass:
 
 
 class EventSlots:
+    # https://book.pythontips.com/en/latest/__slots__magic.html
     # https://docs.python.org/3/reference/datamodel.html?highlight=__slots__#object.__slots__
     __slots__ = ['dna_base', 'value']
 
@@ -40,7 +40,7 @@ class EventSlots:
         self.value = value
 
 
-# https://docs.python.org/3/library/dataclasses.html
+# https://www.geeksforgeeks.org/namedtuple-in-python/
 EventTuple = namedtuple('EventTuple', ['dna_base', 'value'])
 
 

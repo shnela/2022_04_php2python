@@ -16,7 +16,7 @@ def run_random_numbers():
     print(f'{next(rnd_gen)=}')
     print(f'{next(rnd_gen)=}')
 
-    # but we can have two way communication
+    # but we can have two-way communication
     print(f'{rnd_gen.send(None)=}')
     print(f'{rnd_gen.send(42)=}')
     # rnd_gen.throw(Exception)

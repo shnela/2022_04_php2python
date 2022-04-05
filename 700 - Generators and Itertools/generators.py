@@ -18,7 +18,7 @@ def limit(l, *, n) -> Generator:
 
 
 def cycle(l) -> Generator:
-    """Generate inifinite serie out of given list"""
+    """Generate infinite series out of given list"""
 
 
 if __name__ == '__main__':
