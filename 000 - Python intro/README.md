@@ -112,6 +112,8 @@ Kind of like [composer][]?
 
 More info about [Virtual Environments and Packages][]
 
+And great podcast about [Tools for Setting Up Python on a New Machine][]
+
 ### Run in pyCharm
 [Create and edit run/debug configurations][]
 
@@ -129,4 +131,5 @@ File | Settings | Project: php2python | Python Interpreter
 [PIP]: https://pypi.org/
 [composer]: https://getcomposer.org/
 [Virtual Environments and Packages]: https://docs.python.org/3/tutorial/venv.html
+[Tools for Setting Up Python on a New Machine]: https://realpython.com/podcasts/rpp/101/
 [Create and edit run/debug configurations]: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html

@@ -36,14 +36,17 @@ assert list(fruits_with_a) == ['apple', 'banana', 'mango']
 ```
 
 ## Constructing collections
-```python
-list(), []
-...
 
-```
+| Object type | Constructor |      | Comprehension                    |
+|-------------|-------------|------|----------------------------------|
+| list        | `list()`    | `[]` | `[e for e in range(10)]`         |
+| dict        | `dict()`    | `{}` | `{e: len(e) for e in range(10)}` |
+| set         | `set()`     |      | `{e for e in range(10)}`         |
+| tuple       | `tuple()`   | `()` |                                  |
+| generator   |             |      | `(e for e in range(10))`         |
+
 
 ## Exercises
-Exercises:
 * [measure_words_length.py](measure_words_length.py)
 * [count_words.py](count_words.py)
 

@@ -65,6 +65,19 @@ print(letters)
 # list is mutable
 letters[0] = 's replacement'  # Will throw TypeError
 ```
+
+### [Tuples unpacking](https://www.w3schools.com/python/python_tuples_unpack.asp)
+
+```python
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+(green, *tropic, red) = fruits
+# (green, *tropic, *red) = fruits  # SyntaxError: multiple starred expressions in assignment
+```
+
+### Other about tuple
 [mutable_element_in_immutable_tuple.py](mutable_element_in_immutable_tuple.py)
 
 ## Dict
@@ -81,10 +94,6 @@ print(a[2])
 print(a['age'])
 ```
 
-Exercises:
-* [measure_words_length.py](measure_words_length.py)
-* [count_words.py](count_words.py)
-
 ### Accessing dict elements
 ```python
 d = {
@@ -97,7 +106,26 @@ assert d.get('three') is None
 assert d.get('three', 'fallback val') == 'fallback val'
 ```
 
-### [dictionaries ordered in Python 3.6+][]
+### Iterating over dict
+```python
+d = {
+    'one': 1,
+    'two': 2,
+}
+assert list(d) == list(d.keys()) == ['one', 'two']
+assert list(d.values()) == [1, 2]
+assert list(d.items()) == [('one', 1), ('two', 2)]
+
+# Tuple unpacking is useful
+for k, v in d.values():
+    print(k, v)
+```
+
+### Exercises:
+* [measure_words_length.py](measure_words_length.py)
+* [count_words.py](count_words.py)
+
+### [dictionaries ordered since Python 3.6+][]
 > They are insertion ordered. As of Python 3.6, for the CPython implementation of Python,
 > dictionaries remember the order of items inserted.
 > This is considered an implementation detail in Python 3.6; you need to use OrderedDict if you want insertion

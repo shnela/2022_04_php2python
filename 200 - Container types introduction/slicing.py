@@ -29,8 +29,8 @@ if __name__ == '__main__':
     assert text[-8:-5] == 'old'
     assert text[-8:16] == 'old'  # it works, but doesn't look good
 
-    reverse_level = 'Level'[::2]
-    assert reverse_level == 'Lvl'
+    step_by_2 = 'Level'[::2]
+    assert step_by_2 == 'Lvl'
 
     one_two_three = [1, 2, 3]
     assert one_two_three[1] == 2
